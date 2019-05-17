@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:mmtest" x:Class="mmtest.MainPage">
+    <StackLayout Orientation="Vertical" Margin="10,150,10,0">
+        
+        <Button x:Name="btnPlay" Text="Play" HorizontalOptions="CenterAndExpand" Clicked="btnPlay_Clicked" />
+        <Button x:Name="btnPause" Text="Pause" HorizontalOptions="CenterAndExpand" Clicked="btnPause_Clicked" />
+        <Button x:Name="btnStop" Text="Stop" HorizontalOptions="CenterAndExpand" Clicked="btnStop_Clicked" />
+        
+    </StackLayout>
+</ContentPage>
