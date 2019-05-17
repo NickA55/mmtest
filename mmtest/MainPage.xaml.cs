@@ -17,21 +17,31 @@ namespace mmtest
         public MainPage()
         {
             InitializeComponent();
+
+            lblStatus.Text = CrossMediaManager.Current.MediaPlayer.State.ToString();
         }
 
         async void btnPlay_Clicked(object sender, System.EventArgs e)
         {
             await CrossMediaManager.Current.Play("http://radiosgreatesthits.out.airtime.pro:8000/radiosgreatesthits_a");
+
+            lblStatus.Text = CrossMediaManager.Current.MediaPlayer.State.ToString();
+
         }
 
-        void btnPause_Clicked(object sender, System.EventArgs e)
+        async void btnPause_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await CrossMediaManager.Current.Pause();
+
+            lblStatus.Text = CrossMediaManager.Current.MediaPlayer.State.ToString();
+
         }
 
-        void btnStop_Clicked(object sender, System.EventArgs e)
+        async void btnStop_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await CrossMediaManager.Current.Stop();
+
+            lblStatus.Text = CrossMediaManager.Current.MediaPlayer.State.ToString();
         }
 
     }

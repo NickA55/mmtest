@@ -5,6 +5,8 @@
         <Button x:Name="btnPlay" Text="Play" HorizontalOptions="CenterAndExpand" Clicked="btnPlay_Clicked" />
         <Button x:Name="btnPause" Text="Pause" HorizontalOptions="CenterAndExpand" Clicked="btnPause_Clicked" />
         <Button x:Name="btnStop" Text="Stop" HorizontalOptions="CenterAndExpand" Clicked="btnStop_Clicked" />
-        
+
+        <Label x:Name="lblStatus" Text="Status" HorizontalOptions="CenterAndExpand" Margin="10,30,10,0" />
+
     </StackLayout>
 </ContentPage>
